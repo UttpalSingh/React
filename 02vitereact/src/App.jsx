@@ -9,10 +9,17 @@ function App() {
   const addValue = () => {
     counter = counter+1
     setCounter(counter) // set counter is a function that display the value
+    if(counter > 20){
+      setCounter(20)
+    }
   }
 
   const removevalue = () => {
     setCounter(counter-1)
+    if(counter < 1){
+      alert("you are at the bottom of the digit")
+      setCounter(1)
+    }
   }
 
   return(
