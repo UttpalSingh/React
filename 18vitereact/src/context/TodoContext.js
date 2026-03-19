@@ -20,5 +20,5 @@ export const TodoProvider = TodoContext.Provider
 //     return createContext(TodoContext)
 // }
 export const useTodo = () => {
-    return createContext(TodoContext) //Note = You always have to pass a context inside createContext()
+    return useContext(TodoContext) //Note = You always have to pass a context inside createContext()
 }
