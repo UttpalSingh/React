@@ -23,6 +23,7 @@ const App = () => {
     //The charAt() method in JavaScript returns the character at a specified index within a string.
 
     // useCallback() is used for optimization,memorization
+    //useCallback will return a memoized version of the callback that only changes if one of the inputs has changed
 
     setPassword(pass);
   }, [numberAllowed, charactersAllowed, length, setPassword]); // setPassword in dependencies is for optimiztion
